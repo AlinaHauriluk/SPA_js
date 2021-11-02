@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.app {
+    height: 100%;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background-color:rgba(39, 32, 27, 0.764);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.header .logo {
+    color: thistle;
+    font-size: 42px;
+    font-family: fantasy;
+    letter-spacing: 3.2px;
+    margin-left: 70px;
+    text-transform: capitalize;
+}
+
+.header .list_nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .list_nav .list_item {
+    color: thistle;
+    font-family: fantasy;
+    letter-spacing: 3.2px;
+}
+
+.header .list_nav .list_item a {
+    display: inline-block;
+    color: thistle;
+    font-size: 22px;
+    font-family: fantasy;
+    letter-spacing: 3.2px;
+    text-decoration: none;
+}
+
+.header .list_nav .list_item .buy {
+    width: 55px;
+    height: 40px;
+}
+
+.header .list_nav .list_item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header .list_nav .list_item:last-child {
+    margin-right: 70px;
+}
+
+.main {
+    padding: 70px 0 70px 40px;
+    background-color: black;
+}
+
+.main ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.main ul li {
+    width: calc(22% - 40px);
+    margin-right: 40px;
+    margin-top: 30px;
+    border: 2px solid white;
+    background-color: snow;
+    position: relative;
+}
+
+.main ul li .buy {
+    font-size: 26px;
+    display: inline-block;
+    color: maroon;
+    padding: 5px 10px;
+    position: absolute;
+    top: -22px;
+    right: -10px;
+}
+
+.main ul .cart {
+    width: calc(30% - 80px);
+    margin: 80px 80px 0 0;
+    position: relative;
+}
+
+.main ul .cart .buy_n {
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid maroon;
+    cursor: pointer;
+    color: maroon;
+    margin-right: 65px;
+    margin-left: 30px;
+    transition: all 0.2s linear;
+    padding: 5px 10px;
+}
+
+.main ul .cart .delete {
+    position: absolute;
+    right: -2.5%;
+    top: -4.5%;
+    border-radius: 50%;
+    background-color: thistle;
+    color: black;
+    border: 1px solid thistle;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.main ul .cart .delete:hover {
+    transform: scale(1.2);
+}
+
+.main ul .cart .delete:active {
+    transform: scale(0.9);
+}
+
+.main ul li h2 {
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.774);
+    color:lavender;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2.2px;
+    line-height: 1.2;
+    padding: 10px 5px;
+}
+
+.main ul li span {
+    font-size: 18px;
+    font-weight: 900;
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+}
+
+.main ul li .buy_n:hover {
+    transform: scale(1.1);
+    color: black; 
+    border-color: black;
+}
+
+.main ul li .buy_n:active {
+    transform: scale(0.9);
+    color: black; 
+    border-color: black;
+}
+
+.main ul li .plus {
+    border: 2px solid black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-flex;
+    transition: all 0.2s linear;
+    color: black;
+}
+
+.main ul li .plus:hover {
+    transform: scale(1.1); 
+    color: midnightblue;
+    border-color: midnightblue;
+}
+
+.main ul li .plus:active {
+    transform: scale(0.9); 
+    color: midnightblue;
+    border-color: midnightblue;
+}
+
+.main ul li .get_buy {
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    color: maroon;
+    border-color: maroon;
+}
+
+.main ul li .get_buy:hover {
+    transform: scale(1.1);
+    color: black; 
+    border-color: black;
+}
+
+.main ul li .get_buy:active {
+    transform: scale(0.9);
+    color: black; 
+    border-color: black;
+}
+
+.main ul li p {
+    font-size: 13px;
+    font-style: inherit;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 10px;
+}
+
+.main ul li h4 {
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    color:thistle;
+    letter-spacing: 2.2px;
+}
+
+.main ul li img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.main ul li .go {
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px double rgb(27, 52, 126);
+    font-weight: 900;
+    text-transform: capitalize;
+    color: rgb(27, 52, 126);
+    transition: all 0.2s linear;
+}
+
+.note {
+    width: 165px;
+    height: 70px;
+    position: fixed; 
+    top: 80px;
+    right: -95px;
+}
+
+.note .wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+
+.note .title {
+    margin-right: 10px;
+    font-size: 12px;
+    text-shadow: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.count,
+.result {
+    font-size: 22px;
+    text-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .product {
+    width: 30%;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 40px 120px;
+}
+
+.footer .title {
+    font-size: 32px;
+    letter-spacing: 3.2px;
+    color: wheat;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.footer .wrapper_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer .wrapper_title a {
+    margin-right: 30px;
+}
+
+.footer .wrapper_title span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

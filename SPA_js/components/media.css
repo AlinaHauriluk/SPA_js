@@ -1,0 +1,160 @@
+@media(min-width: 2560px) {
+    .main ul li {
+        width: calc(18% - 40px);
+    }
+
+    .main ul .cart {
+        width: calc(20% - 80px);
+    }
+
+    .main .product {
+        width: 22%;
+    }
+
+    .note {
+        width: 200px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .note {
+        width: 130px;
+        height: 50px;
+        position: relative; 
+        top: 0;
+        right: 0;
+    }
+
+    .note .wrapper {
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+
+    .main ul li {
+        width: calc(30% - 40px);
+    }
+
+    .main ul .cart {
+        width: calc(37% - 80px);
+    }  
+}
+
+@media(max-width: 768px) {
+    .header .logo {
+        font-size: 28px;
+    }
+
+    .count,
+    .result {
+        font-size: 18px;
+    }
+
+    .main ul li {
+        width: calc(42% - 40px);
+    }
+
+    .main ul .cart {
+        width: calc(50% - 80px);
+    }  
+
+    .main .product {
+        width: 40%;
+    }
+}
+
+@media(max-width: 426px) {
+    .main {
+        padding: 70px 0 0 0;
+    }
+
+    .header .logo {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 25px;
+    }
+
+    .header .list_nav .list_item a {
+        font-size: 14px;
+    }
+
+    .header .list_nav .list_item:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .header .list_nav .list_item:last-child {
+        margin-right: 25px;
+        margin-left: 10px;
+    }
+
+    .main ul li {
+        width: 60%;
+        margin-right: 0;
+    }
+    
+    .main ul .cart {
+        width: 65%;
+        margin: 40px 0 0 0;
+        position: relative;
+    } 
+
+    .main .product {
+        width: 70%;
+    }
+
+    .footer {
+        padding: 30px 0 40px 30px;
+    }
+}
+
+@media(max-width: 376px) {
+    .count,
+    .result {
+        font-size: 16px;
+    }
+
+    .note .wrapper {
+        margin-top: 5px; 
+    }
+
+    .header .list_nav .list_item:last-child {
+        margin-right: 15px;
+        margin-left: 0px;
+    }
+
+    .main ul li {
+        width: 70%;
+    }
+
+    .main ul .cart {
+        width: 75%;
+    } 
+}
+
+@media(max-width: 321px) {
+    .main {
+        padding: 120px 0 70px 0;
+    }
+
+    .note {
+        width: 165px;
+        height: 70px;
+        position: fixed; 
+        top: 80px;
+        right: -55px;
+    }
+    
+    .note .wrapper {
+        margin-bottom: 10px;
+        margin-top: 10px; 
+        background-color: rgba(0, 0, 0, 0.705);
+        padding: 0 0 0 10px;
+    }
+
+    .main ul li {
+        width: 75%;
+    }
+
+    .main ul .cart {
+        width: 82%;
+    } 
+}
